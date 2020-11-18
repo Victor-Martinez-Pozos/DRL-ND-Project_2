@@ -33,10 +33,10 @@ class SoftActorCritic:
         soft_q_lr = 3e-4
         policy_lr = 3e-4
         
-        self.value_optimizer  = optim.Adam(value_net.parameters(), lr=value_lr)
-        self.soft_q_optimizer1 = optim.Adam(soft_q_net1.parameters(), lr=soft_q_lr)
-        self.soft_q_optimizer2 = optim.Adam(soft_q_net2.parameters(), lr=soft_q_lr)
-        self.policy_optimizer = optim.Adam(policy_net.parameters(), lr=policy_lr)
+        self.value_optimizer  = optim.Adam(self.value_net.parameters(), lr=value_lr)
+        self.soft_q_optimizer1 = optim.Adam(self.soft_q_net1.parameters(), lr=soft_q_lr)
+        self.soft_q_optimizer2 = optim.Adam(self.soft_q_net2.parameters(), lr=soft_q_lr)
+        self.policy_optimizer = optim.Adam(self.policy_net.parameters(), lr=policy_lr)
         
         
         replay_buffer_size = 1000000
