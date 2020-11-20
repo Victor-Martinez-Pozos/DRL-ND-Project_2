@@ -27,3 +27,7 @@ All the code to train or to test the sac agent is contained inside the **'Contin
 ![Reacher testing](./media/Reacher.gif)
 
 The agent was able to achive a reward of +30 after 298 episodes. 
+
+## Citations
+
+Most of the code is based on the github repo "Deep-Reinforcement-Learning-Algorithms/BipedalWalker-Soft-Actor-Critic" from @rafael1s 
