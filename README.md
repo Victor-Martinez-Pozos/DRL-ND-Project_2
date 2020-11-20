@@ -4,9 +4,11 @@
 
 In this project I trained a SAC agent to solve the unity environment "Reacher" which consist in a Double-jointed arm which must move to diferent target locations, the states and actions in the environment consists as follows:
 
-* Vector Observation space: 26 variables corresponding to position, rotation, velocity, and angular velocities of the two arm rigid bodies.
+* Vector Observation space: 33 variables corresponding to position, rotation, velocity, and angular velocities of the two arm rigid bodies.
 * Vector Action space: (Continuous) Size of 4, corresponding to torque applicable to two joints.
 * Visual Observations: None
+
+And a reward of +0.1 is provided for each step that the agent's hand is in the goal location, and in order to solve the environment, the agent must get an average score of +30 over 100 consecutive episodes.
 
 ![Environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/images/reacher.png?raw=true)
 
